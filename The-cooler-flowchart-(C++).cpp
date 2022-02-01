@@ -28,4 +28,3 @@ int flowchart(){
                         cout << "Invalid answer. Please try again.\n";
         } while (x != 1); 
 }
-
