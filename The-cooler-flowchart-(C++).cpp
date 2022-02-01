@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int flowchart(){
+int main(){
        char choice = ' ';
         int x, y = 0;
         cout << "Welcome to the 3D Printer Finder.\n\n\n";
@@ -19,6 +19,15 @@ int flowchart(){
                         choice = toupper(choice);
                         if (choice == 'Y'){
                                 //Need affordability
+                                choice = ' ';
+                                cout << "Do you need dual extrusion? [Y or N] ";
+                                cin >> choice;
+                                choice = toupper(choice);        
+                                if (choice == 'Y')
+                                        cout << "You'll want the Deezmaker Bukobot v2 Duo.\n";
+                                if (choice == 'N')
+                                        cout << "You'll want the Deezmaker Bukobot v2.\n";
+                                        
                         }
                         else if (choice == 'N'){
                                 cout << "You'll want the Ultimaker2.\n";
@@ -28,3 +37,4 @@ int flowchart(){
                         cout << "Invalid answer. Please try again.\n";
         } while (x != 1); 
 }
+
