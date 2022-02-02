@@ -4,93 +4,89 @@
 using namespace std;
 
 int flowchart(){
-       char choice = ' ';
-        int x = 0;
-        cout << "Welcome to the 3D Printer Finder.\n\n\n";
-        do {
-                cout << "The thing I want most is...\n\n  [A] Ultra High Print Quality\n\n  [B] Moddability\n\n  [C] Ease of Use\n\n  [D] Big Build Volume\n\n  [E] Portability\n\n";  
+    char choice = ' ';
+    int x = 0;
+    cout << "Welcome to the 3D Printer Finder.\n\n\n";
+    do {
+        cout << "The thing I want most is...\n\n  [A] Ultra High Print Quality\n\n  [B] Moddability\n\n  [C] Ease of Use\n\n  [D] Big Build Volume\n\n  [E] Portability\n\n";  
+        cin >> choice;
+        choice = toupper(choice);
+        if (choice == 'A'){
+            //Ultra High Print Quality 
+            choice = ' ';
+            cout << "Do you also need affordability? [Y or N] ";
+            cin >> choice;
+            choice = toupper(choice);
+            if (choice == 'Y'){
+                //Need affordability
+                choice = ' ';
+                cout << "Do you need dual extrusion? [Y or N] ";
                 cin >> choice;
-                choice = toupper(choice);
-                if (choice == 'A'){
-                        //Ultra High Print Quality 
-                        choice = ' ';
-                        cout << "Do you also need affordability? [Y or N] ";
-                        cin >> choice;
-                        choice = toupper(choice);
-                        if (choice == 'Y'){
-                                //Need affordability
-                                choice = ' ';
-                                cout << "Do you need dual extrusion? [Y or N] ";
-                                cin >> choice;
-                                choice = toupper(choice);        
-                                if (choice == 'Y')
-                                        cout << "You'll want the Deezmaker Bukobot v2 Duo.\n";
-                                if (choice == 'N')
-                                        cout << "You'll want the Deezmaker Bukobot v2.\n";
-                                        
-                        }
-                        else if (choice == 'N'){
-                                cout << "You'll want the Ultimaker2.\n";
-                        }        
+                choice = toupper(choice);        
+                if (choice == 'Y')
+                    cout << "You'll want the Deezmaker Bukobot v2 Duo.\n";
+                        if (choice == 'N')
+                            cout << "You'll want the Deezmaker Bukobot v2.\n";                
                 }
-                if (choice == 'B'){
-                        //Moddability
+                else if (choice == 'N')
+                    cout << "You'll want the Ultimaker2.\n";     
+                }
+            if (choice == 'B'){
+                //Moddability
+                choice = ' ';
+                cout << "Do you also need affordability? [Y or N] ";
+                cin >> choice;
+                choice = toupper(choice);    
+                if (choice == 'Y'){
+                    choice = ' ';
+                    cout << "DIY kit or assembled machine? [D or A] ";
+                    cin >> choice;
+                    choice = toupper(choice);    
+                    if (choice == 'D'){
                         choice = ' ';
-                        cout << "Do you also need affordability? [Y or N] ";
+                        cout << "Would you rather have more build volume or faster printing speeds? [V or S] ";
                         cin >> choice;
                         choice = toupper(choice);    
-                        if (choice == 'Y'){
+                        if (choice == 'V'){
+                            choice = ' ';
+                            cout << "A little bit more build volume or a LOT more build volume? [l or L (CASE SENSITIVE)]";
+                            cin >> choice;
+                            if (choice == 'l'){
                                 choice = ' ';
-                                cout << "DIY kit or assembled machine? [D or A] ";
+                                cout << "Would you rather have better company support or better community support? [c or C (CASE SENSITIVE)] ";
                                 cin >> choice;
-                                choice = toupper(choice);    
-                                if (choice == 'D'){
-                                        choice = ' ';
-                                        cout << "Would you rather have more build volume or faster printing speeds? [V or S] ";
-                                        cin >> choice;
-                                        choice = toupper(choice);    
-                                        if (choice == 'V'){
-                                                choice = ' ';
-                                                cout << "A little bit more build volume or a LOT more build volume? [l or L (CASE SENSITIVE)]";
-                                                cin >> choice;
-                                                if (choice == 'l'){
-                                                        choice = ' ';
-                                                        cout << "Would you rather have better company support or better community support? [c or C (CASE SENSITIVE)] ";
-                                                        cin >> choice;
-                                                        if (choice == 'c')
-                                                                cout << "You'll want the Rigidbot Regular.\n";
-                                                        if (choice == 'C')
-                                                                cout << "You'll want the Printrbot Metal Plus.\n";
-                                                        
-                                                        
-                                                }                                                   
-                                                else if (choice == 'L')
-                                                        cout << "You'll want the Rigidbot Big.\n";
-                                        }
-                                }
-                                else if (choice == 'A')
-                                        cout << "You'll want the Robo3D.\n";
+                                if (choice == 'c')
+                                    cout << "You'll want the Rigidbot Regular.\n";
+                                if (choice == 'C')
+                                    cout << "You'll want the Printrbot Metal Plus.\n";
+                            }                                                   
+                            else if (choice == 'L')
+                                cout << "You'll want the Rigidbot Big.\n";
                         }
-                        else if (choice == 'N'){
-                                choice = ' ';
-                                cout << "DIY kit or assembled machine? [D or A] ";
-                                cin >> choice;
-                                choice = toupper(choice);    
-                                if (choice == 'D')
-                                        cout << "You'll want the Luizbot KITTAZ.\n";
-                                else if (choice == 'A')
-                                        cout << "You'll want the Luizbot TAZ 4.\n";
+                    }
+                        else if (choice == 'A')
+                            cout << "You'll want the Robo3D.\n";
                         }
+                else if (choice == 'N'){
+                    choice = ' ';
+                    cout << "DIY kit or assembled machine? [D or A] ";
+                    cin >> choice;
+                    choice = toupper(choice);    
+                    if (choice == 'D')
+                        cout << "You'll want the Luizbot KITTAZ.\n";
+                    else if (choice == 'A')
+                            cout << "You'll want the Luizbot TAZ 4.\n";
                 }
-                if (choice == 'C'){
+            }
+            if (choice == 'C'){
                         
-                }
-                if (choice == 'D'){
+            }
+            if (choice == 'D'){
+                    
+            }
+            if (choice == 'E'){
                         
-                }
-                if (choice == 'E'){
-                        
-                }
-        } while (x != 1); 
+            }
+    } while (x != 1); 
 }
 
