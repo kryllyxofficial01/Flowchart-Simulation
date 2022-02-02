@@ -175,7 +175,6 @@ public class flowchart {
       System.out.println("");
       System.out.println("That was not an option.");
     }
-
     scanner.close();
   }
 }
