@@ -7,7 +7,7 @@ Fully simulate the flowchart (see image below) in two languages: Java and C++.
 March 1st, at 9pm.
 
 #### The Contenders
-[Aiden Pike](https://github.com/aidenpike) and [Kryllyx](https://github.com/kryllyxofficial01).
+[Aiden Pike](https://github.com/aidenpike) (C++) and [Kryllyx](https://github.com/kryllyxofficial01) (Java).
 
 #
 
