@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(){
+int flowchart(){
     char choice = ' ';
     int x = 0;
     cout << "Welcome to the 3D Printer Finder.\n\n\n";
@@ -75,7 +75,7 @@ int main(){
                     if (choice == 'D')
                         cout << "You'll want the Luizbot KITTAZ.\n";
                     else if (choice == 'A')
-                            cout << "You'll want the Luizbot TAZ 4.\n";
+                        cout << "You'll want the Luizbot TAZ 4.\n";
                 }
             }
             if (choice == 'C'){
@@ -88,54 +88,72 @@ int main(){
                     choice = ' ';
                     cout << "Would you rather have more ease of use or more build volume? [E or V] ";
                     cin >> choice;
-                    choice = toupper(choice);
+                    choice = toupper(choice);    
                     if (choice == 'E')
                         cout << "You'll want the Dremel Ideabuilder.\n";
                     else if (choice == 'V'){
                         choice = ' ';
-                        cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
+                        cout << "Do you want an open source printer? [Y or N] ";
                         cin >> choice;
                         choice = toupper(choice);
                         if (choice == 'Y'){
                             choice = ' ';
-                            cout << "How about a MakerBot clone? [Y or N] ";
+                            cout << "Do you need a dual extruder? [Y or N] ";
+                            cin >> choice;
+                            choice = toupper(choice);
+                            if (choice == 'Y'){
+                                choice = ' ';
+                                cout << "Do you need a big build volume? [Y or N] ";
+                                cin >> choice;
+                                choice = toupper(choice);    
+                                if (choice == 'Y')
+                                    cout << "You'll want the Solidoodle Workbench.\n";
+                                if (choice == 'N')
+                                    cout << "You'll want the Solidoodle Workbench Apprentice.\n";
+                            }
+                            else if (choice == 'N')
+                                cout << "You'll want the Solidoodle 4.\n";
+                        }
+                    }
+                }
+                if (choice == 'N'){               
+                    choice = ' ';
+                    cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
+                    cin >> choice;
+                    choice = toupper(choice);
+                    if (choice == 'Y'){
+                        choice = ' ';
+                        cout << "How about a MakerBot clone? [Y or N] ";
+                        cin >> choice;
+                        choice = toupper(choice);
+                        if (choice == 'Y')
+                            cout << "You'll want the Flashforge Creator.\n";
+                        else if (choice == 'N'){
+                            choice = ' ';
+                            cout << "Do you need a dual extruder? [Y or N] ";
                             cin >> choice;
                             choice = toupper(choice);
                             if (choice == 'Y')
-                                cout << "You'll want the Flashforge Creator.\n";
-                            else if (choice == 'N'){
                                 choice = ' ';
-                                cout << "Do you need a dual extruder [Y or N] ";
+                                cout << "How does a triple extruder sound? ";
                                 cin >> choice;
-                                choice = toupper(choice);   
-                                if (choice == 'Y'){
+                                choice = toupper(choice);
+                                if (choice == 'Y')
+                                    cout << "You'll want the 3D systems CubePro Trio.\n";
+                                else if (choice == 'N'){
                                     choice = ' ';
-                                    cout << "How does a triple extruder sound? [Y or N] ";
+                                    cout << "So then just a dual extruder. Do you need a big build volume? [Y or N] ";
                                     cin >> choice;
-                                    choice = toupper(choice);    
-                                    if (choice == 'Y')
-                                        cout << "You'll want the 3D Systems CubePro Trio.\n";
+                                    choice = toupper(choice);
+                                    if (choice == 'Y'){
+                                        cout << "You'll want the Leapfrog Creatr XL.\n";    
+                                    }
                                     else if (choice == 'N'){
-                                        choice = ' ';
-                                        cout << "So just a dual extruder. Do you need a big build volume? [Y or N] ";
-                                        cin >> choice;
-                                        choice = toupper(choice);
-                                        if (choice == 'Y')
-                                            cout << "You'll want the Leapfrog Creatr XL.\n";
-                                        else if (choice == 'N')
-                                            cout << "You'll want the Leapfrog Creatr HS.\n";
+                                        cout << "You'll want the Leapfrog Creatr HS.\n";
                                     }
                                 }
-                                else if (choice == 'N')
-                                    cout << "You'll want either the SeeMeCNC Orion Delta, Airwolf HDX, or Leapfrog Creatr.\n";
-                            }
-                        }   
-                        else if (choice == 'N')
-                            cout << "You'll want the Makerbot Replicator 2.\n";
+                        }
                     }
-                }
-                else if (choice == 'N'){
-                    
                 }
             }
             if (choice == 'D'){
