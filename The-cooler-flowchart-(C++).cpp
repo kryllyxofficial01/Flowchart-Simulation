@@ -174,7 +174,7 @@ int flowchart(){
                         cin >> choice;
                         choice = toupper(choice);    
                         if (choice == 'D')
-                            cout << "You'll want the SeeMeCNC Rostock MAX v2.\n"
+                            cout << "You'll want the SeeMeCNC Rostock MAX v2.\n";
                         else if (choice == 'A')
                             cout << "You'll want the Wanhao Duplicator.\n";       
                     }
@@ -185,13 +185,35 @@ int flowchart(){
                     cin >> choice;
                     choice = toupper(choice);
                     if (choice == 'Y')
-                        cout << "You'll want the Leapfrog Creatr XL.\n"
+                        cout << "You'll want the Leapfrog Creatr XL.\n";
                     else if (choice == 'N')
                         cout << "You'll want the Makerbot Replicator Z18.\n";
                 }
             }
             if (choice == 'E'){
-                        
+                //Portability
+                choice = ' ';
+                cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
+                cin >> choice;
+                choice = toupper(choice);    
+                if (choice == 'Y'){
+                    choice = ' ';
+                    cout << "What level of portable are we talking about...Foldable and battery operable or lightweight and small? [F or S] ";
+                    cin >> choice;
+                    choice = toupper(choice);
+                    if (choice == 'F')
+                       cout << "You'll want the Poratabee GO.\n";
+                    else if (choice == 'S'){
+                        choice = ' ';
+                        cout << "Would you rather have the ability to print more materials or have a more portable printer? [M or P] ";
+                        cin >> choice;
+                        choice = toupper(choice);
+                        if (choice == 'M')
+                            cout << "You'll want the Deezmaker Bukito.\n";
+                        else if (choice == 'P')
+                            cout << "You'll want the Printrbot Simple Metal.\n";
+                    } 
+                }
             }
     } while (x != 1); 
 }
