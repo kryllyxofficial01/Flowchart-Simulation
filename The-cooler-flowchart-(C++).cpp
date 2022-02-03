@@ -157,7 +157,38 @@ int flowchart(){
                 }
             }
             if (choice == 'D'){
-                    
+                //Big Build Volume
+                choice = ' ';
+                cout << "Do you also need affordability? [Y or N] ";
+                cin >> choice;
+                choice = toupper(choice);
+                if (choice == 'Y'){
+                    choice = ' ';
+                    cout << "Do you want big build volume, or REALLY BIG build volume? [b or B (CASE SENSITIVE)] ";    
+                    cin >> choice;
+                    if (choice == 'b')
+                        cout << "You'll want the Rigidbot Big.\n";
+                    else if (choice == 'B'){
+                        choice = ' ';
+                        cout << "DIY kit or assembled machine? [D or A] ";
+                        cin >> choice;
+                        choice = toupper(choice);    
+                        if (choice == 'D')
+                            cout << "You'll want the SeeMeCNC Rostock MAX v2.\n"
+                        else if (choice == 'A')
+                            cout << "You'll want the Wanhao Duplicator.\n";       
+                    }
+                }
+                else if (choice == 'N'){
+                    choice = ' ';
+                    cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
+                    cin >> choice;
+                    choice = toupper(choice);
+                    if (choice == 'Y')
+                        cout << "You'll want the Leapfrog Creatr XL.\n"
+                    else if (choice == 'N')
+                        cout << "You'll want the Makerbot Replicator Z18.\n";
+                }
             }
             if (choice == 'E'){
                         
