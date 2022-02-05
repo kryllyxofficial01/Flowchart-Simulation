@@ -3,9 +3,19 @@
 
 using namespace std;
 
-int flowchartBetter(){
+class choiceClass {        // The class
+    public:              // Access specifier
+        char choice = ' ';
+        void affordability() {  // Method/function defined inside the class
+            choice = ' ';
+            cout << "Do you also need affordability? [Y or N] ";
+    }
+};
+
+int main(){
     char choice = ' ';
     int x = 0;
+    choiceClass affordObj;
     cout << "Welcome to the 3D Printer Finder.\n\n\n";
     do {
         cout << "The thing I want most is...\n\n  [A] Ultra High Print Quality\n\n  [B] Moddability\n\n  [C] Ease of Use\n\n  [D] Big Build Volume\n\n  [E] Portability\n\n";  
@@ -13,8 +23,7 @@ int flowchartBetter(){
         choice = toupper(choice);
         if (choice == 'A'){
             //Ultra High Print Quality 
-            choice = ' ';
-            cout << "Do you also need affordability? [Y or N] ";
+            affordObj.affordability();
             cin >> choice;
             choice = toupper(choice);
             if (choice == 'Y'){
@@ -25,16 +34,15 @@ int flowchartBetter(){
                 choice = toupper(choice);        
                 if (choice == 'Y')
                     cout << "You'll want the Deezmaker Bukobot v2 Duo.\n";
-                if (choice == 'N')
-                    cout << "You'll want the Deezmaker Bukobot v2.\n";                
-                }
                 else if (choice == 'N')
-                    cout << "You'll want the Ultimaker2.\n";     
+                    cout << "You'll want the Deezmaker Bukobot v2.\n";                
+            }
+            else if (choice == 'N')
+                cout << "You'll want the Ultimaker2.\n";     
                 }
             if (choice == 'B'){
                 //Moddability
-                choice = ' ';
-                cout << "Do you also need affordability? [Y or N] ";
+                affordObj.affordability();
                 cin >> choice;
                 choice = toupper(choice);    
                 if (choice == 'Y'){
@@ -80,8 +88,7 @@ int flowchartBetter(){
             }
             if (choice == 'C'){
                 //Ease of Use
-                choice = ' ';
-                cout << "Do you also need affordability? [Y or N] ";
+                affordObj.affordability();
                 cin >> choice;
                 choice = toupper(choice);                
                 if (choice == 'Y'){
@@ -158,8 +165,7 @@ int flowchartBetter(){
             }
             if (choice == 'D'){
                 //Big Build Volume
-                choice = ' ';
-                cout << "Do you also need affordability? [Y or N] ";
+                affordObj.affordability();
                 cin >> choice;
                 choice = toupper(choice);
                 if (choice == 'Y'){
@@ -217,10 +223,3 @@ int flowchartBetter(){
             }
     } while (x != 1); 
 }
-
-/* Will need this relatively often.
-    choice = ' ';
-    cout << "";
-    cin >> choice;
-    choice = toupper(choice);
-*/
