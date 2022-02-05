@@ -9,9 +9,9 @@ Fully simulate the flowchart (see image below) in two languages: Java and C++.
 March 1st, at 9pm.
 
 #### The Contenders
-[Aiden Pike](https://github.com/aidenpike) (C++) and [Kryllyx](https://github.com/kryllyxofficial01) (Java).
+[Selisine](https://github.com/aidenpike) (C++) and [Kryllyx](https://github.com/kryllyxofficial01) (Java).
 
-#### THE JUDGE. NOT A CONTENDER
+#### The Judge
 [MePipe](https://github.com/NotMePipe) is the judge. Not a contender. You have been warned.
 
 #
