@@ -109,6 +109,56 @@ public class flowchart {
 
     moddability.close();
   }
+
+  public static void easeOfUseBranch() {
+    Scanner easeOfUse = new Scanner(System.in);
+
+    System.out.println("");
+    System.out.println("Do you want affordability? [Y]es or [N]o?:");
+    String affordability = easeOfUse.next();
+
+    if (affordability.equals("Y")) {
+      System.out.println("");
+      System.out.println("Do you want more [E]ase of Use or [B]uild Volume?:");
+      String capability = easeOfUse.next();
+
+      if (capability.equals("E")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Recommendation: Dremel Ideabuilder");
+      }
+      else if (capability.equals("")) {
+        System.out.println("");
+        System.out.println("Do you want an open-source printer? [Y]es or [N]o?:");
+        String printer_type = easeOfUse.next();
+
+        if (printer_type.equals("Y")) {
+          System.out.println("");
+          System.out.println("Do you want dual extruder? [Y]es or [N]o?:");
+          String extruder_type = easeOfUse.next();
+
+          if (extruder_type.equals("Y")) {
+            System.out.println("");
+            System.out.println("Do you want a big build volume? [Y]es or [N]o?:");
+            String build_type = easeOfUse.next();
+
+            if (build_type.equals("Y")) {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("Recommendation: Solidoodle Workbench");
+            }
+            else if (build_type.equals("N")) {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("Recommendation: Solidoodle Workbench Apprentice");
+            }
+          }
+        }
+      }
+    }
+
+    easeOfUse.close();
+  }
   
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
