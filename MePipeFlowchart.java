@@ -41,6 +41,7 @@ public class MePipeFlowchart {
                         break;
                     case "2":
                         answer = "Ultimaker2";
+                        break;
                     default:
                         flowchartHandler("Do you also need affordability? 1) Yes 2) No", scanner, 2);
                         break;
@@ -91,6 +92,7 @@ public class MePipeFlowchart {
                         break;
                     case "2":
                         answer = "MakerBot Replicator Mini";
+                        break;
                     default:
                         flowchartHandler("Are you opposed to the idea of having a MakerBot? 1) Yes 2) No", scanner, 6);
                         break;
@@ -100,8 +102,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Deezmaker Bukobot v2 Duo";
+                        break;
                     case "2":
                         answer = "Deezmaker Bukobot v2";
+                        break;
                     default:
                         flowchartHandler("Do you also need dual extrusion? 1) Yes 2) No", scanner, 7);
                         break;
@@ -114,6 +118,7 @@ public class MePipeFlowchart {
                         break;
                     case "2":
                         answer = "Robo3D";
+                        break;
                     default:
                         flowchartHandler("DIY kit or assembled machine? 1) Kit 2) Assembled", scanner, 8);
                         break;
@@ -123,8 +128,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Lulzbot KITTAZ";
+                        break;
                     case "2":
                         answer = "Lulzbot TAZ 4";
+                        break;
                     default:
                         flowchartHandler("DIY kit or assembled machine? 1) Kit 2) Assembled", scanner, 9);
                         break;
@@ -134,6 +141,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Dremel Ideabuilder";
+                        break;
                     case "2":
                         flowchartHandler("Do you want an open source printer? 1) Yes 2) No/I don't care", scanner, 16);
                         break;
@@ -149,6 +157,7 @@ public class MePipeFlowchart {
                         break;
                     case "2":
                         answer = "MakerBot Replicator 2";
+                        break;
                     default:
                     flowchartHandler("Are you opposed to the idea of having a MakerBot? 1) Yes 2) No", scanner, 11);
                         break;
@@ -158,6 +167,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Rigidbot Big";
+                        break;
                     case "2":
                         flowchartHandler("DIY kit or assembled machine? 1) Assembled 2) Kit", scanner, 18);
                         break;
@@ -170,8 +180,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Leapfrog Creatr XL";
+                        break;
                     case "2":
                         answer = "Makerbot Replicator Z18";
+                        break;
                     default:
                         flowchartHandler("Are you opposed to the idea of having a MakerBot? 1) Yes 2) No", scanner, 13);
                         break;
@@ -181,6 +193,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Portabee GO";
+                        break;
                     case "2":
                         flowchartHandler("Would you rather have the ability to print more materials or have a more portable printer? 1) More materials 2) Portability", scanner, 19);
                         break;
@@ -193,6 +206,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Velleman K8200";
+                        break;
                     case "2":
                         flowchartHandler("A little big more build volume or a LOT more build volume? 1) A little more 2) A LOT more", scanner, 20);
                         break;
@@ -218,6 +232,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Flashforge Creator";
+                        break;
                     case "2":
                         flowchartHandler("Do you need a dual extruder? 1) Yes 2) No", scanner, 23);
                         break;
@@ -230,8 +245,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Wanhao Duplicator 5";
+                        break;
                     case "2":
                         answer = "SeeMeCNC Rostock MAX v2";
+                        break;
                     default:
                         flowchartHandler("DIY kit or assembled machine? 1) Assembled 2) Kit", scanner, 18);
                         break;
@@ -241,8 +258,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Deezmaker Bukito";
+                        break;
                     case "2":
                         answer = "Printrbot Simple Metal";
+                        break;
                     default:
                         flowchartHandler("Would you rather have the ability to print more materials or have a more portable printer? 1) More materials 2) Portability", scanner, 19);
                         break;
@@ -255,6 +274,7 @@ public class MePipeFlowchart {
                         break;
                     case "2":
                         answer = "Rigidbot Big";
+                        break;
                     default:
                         flowchartHandler("A little big more build volume or a LOT more build volume? 1) A little more 2) A LOT more", scanner, 20);
                         break;
@@ -267,6 +287,7 @@ public class MePipeFlowchart {
                         break;
                     case "2":
                         answer = "Solidoodle 4";
+                        break;
                     default:
                         flowchartHandler("Do you need a dual extruder? 1) Yes 2) No", scanner, 21);
                         break;
@@ -276,6 +297,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "XYZPrinting DaVinci 2.0";
+                        break;
                     case "2":
                         flowchartHandler("How does a built in 3D scanner sound? 1) Cool! 2) Eh.", scanner, 26);
                         break;
@@ -301,8 +323,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Rigidbot Regular";
+                        break;
                     case "2":
                         answer = "Printrbot Metal Plus";
+                        break;
                     default:
                         flowchartHandler("Would you rather have better company support or better community support? 1) Community 2) Company", scanner, 24);
                         break;
@@ -312,8 +336,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Solidoodle Workbench";
+                        break;
                     case "2":
                         answer = "Solidoodle Workbench Apprentice";
+                        break;
                     default:
                         flowchartHandler("Do you need a big build volume? 1) Yes 2) No", scanner, 25);
                         break;
@@ -323,8 +349,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "XYZPrinting DaVinci 1.0 AiO";
+                        break;
                     case "2":
                         answer = "XYZPrinting DaVinci 1.0";
+                        break;
                     default:
                         flowchartHandler("How does a built in 3D scanner sound? 1) Cool! 2) Eh.", scanner, 26);
                         break;
@@ -334,10 +362,13 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "SeeMeCNC Orion Delta";
+                        break;
                     case "2":
                         answer = "AirWolf HDX";
+                        break;
                     case "3":
                         answer = "Leapfrog Creatr";
+                        break;
                     default:
                         flowchartHandler("Make your pick. These three have different build volumes and are priced respectively. 1) SeeMeCNC Orion Delta 2) AirWolf HDX 3) Leapfrog Creatr", scanner, 27);
                         break;
@@ -347,6 +378,7 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "3D Systems CubePro Trio";
+                        break;
                     case "2":
                         flowchartHandler("So then just a dual extruder. Do you need a big build volume? 1) Yes 2) No", scanner, 29);
                         break;
@@ -359,8 +391,10 @@ public class MePipeFlowchart {
                 switch (scanner.nextLine()) {
                     case "1":
                         answer = "Leapfrog Creatr XL";
+                        break;
                     case "2":
                         answer = "Leapfrog Creatr HS";
+                        break;
                     default:
                         flowchartHandler("So then just a dual extruder. Do you need a big build volume? 1) Yes 2) No", scanner, 29);
                         break;
