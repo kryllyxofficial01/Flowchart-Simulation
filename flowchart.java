@@ -251,6 +251,60 @@ public class flowchart {
 
     easeOfUse.close();
   }
+
+  public static void bigBuildVolume() {
+    Scanner bigBuildVolume = new Scanner(System.in);
+
+    System.out.println("");
+    System.out.println("Do you want affordability? [Y]es or [N]o?:");
+    String affordability = bigBuildVolume.next();
+
+    if (affordability.equals("Y")) {
+      System.out.println("");
+      System.out.println("Do you [N]ormal sized build or [E]xtra sized build?:");
+      String build_size = bigBuildVolume.next();
+
+      if (build_size.equals("N")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Recommendation: Rigidbot Big");
+      }
+      else if (build_size.equals("E")) {
+        System.out.println("");
+        System.out.println("Do you want a [D]IY kit or [P]re-assembled kit?:");
+        String kit_type = bigBuildVolume.next();
+
+        if (kit_type.equals("D")) {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("Recommendation: SeeMeCNC Rostock MAX v2");
+        }
+        else if (kit_type.equals("P")) {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("Recommendation: Wanhao Duplicator 5");
+        }
+      }
+    }
+    else if (affordability.equals("N")) {
+      System.out.println("");
+      System.out.println("Do you want a MakerBot? [Y]es or [N]o?:");
+      String makerbot = bigBuildVolume.next();
+
+      if (makerbot.equals("Y")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Recommendation: Makerbot Replicator Z18");
+      }
+      else if (makerbot.equals("N")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Recommendation: Leapfrog Creatr XL");
+      }
+    }
+
+    bigBuildVolume.close();
+  }
   
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -266,6 +320,9 @@ public class flowchart {
     }
     else if (purpose.equals("E")) {
       easeOfUseBranch();
+    }
+    else if(purpose.equals("B")) {
+      bigBuildVolume();
     }
     
     scanner.close();
