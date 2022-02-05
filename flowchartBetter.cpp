@@ -10,12 +10,16 @@ class choiceClass {        // The class
             choice = ' ';
             cout << "Do you also need affordability? [Y or N] ";
     }
+        void machineType() {
+            choice = ' ';
+            cout << "DIY kit or assembled machine? [D or A] ";
+        }
 };
 
 int main(){
     char choice = ' ';
     int x = 0;
-    choiceClass affordObj;
+    choiceClass affordObj, machineType;
     cout << "Welcome to the 3D Printer Finder.\n\n\n";
     do {
         cout << "The thing I want most is...\n\n  [A] Ultra High Print Quality\n\n  [B] Moddability\n\n  [C] Ease of Use\n\n  [D] Big Build Volume\n\n  [E] Portability\n\n";  
@@ -46,8 +50,7 @@ int main(){
                 cin >> choice;
                 choice = toupper(choice);    
                 if (choice == 'Y'){
-                    choice = ' ';
-                    cout << "DIY kit or assembled machine? [D or A] ";
+                    machineType.machineType();
                     cin >> choice;
                     choice = toupper(choice);    
                     if (choice == 'D'){
@@ -76,8 +79,7 @@ int main(){
                             cout << "You'll want the Robo3D.\n";
                         }
                 else if (choice == 'N'){
-                    choice = ' ';
-                    cout << "DIY kit or assembled machine? [D or A] ";
+                    machineType.machineType();
                     cin >> choice;
                     choice = toupper(choice);    
                     if (choice == 'D')
@@ -175,8 +177,7 @@ int main(){
                     if (choice == 'b')
                         cout << "You'll want the Rigidbot Big.\n";
                     else if (choice == 'B'){
-                        choice = ' ';
-                        cout << "DIY kit or assembled machine? [D or A] ";
+                        machineType.machineType();
                         cin >> choice;
                         choice = toupper(choice);    
                         if (choice == 'D')
