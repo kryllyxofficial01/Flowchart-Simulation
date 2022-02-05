@@ -10,7 +10,7 @@ March 1st, at 9pm.
 [Aiden Pike](https://github.com/aidenpike) (C++) and [Kryllyx](https://github.com/kryllyxofficial01) (Java).
 
 #### THE JUDGE. NOT A CONTENDER
-[notmepipe](https://github.com/notmepipe) is the judge. Not a contender. You have been warned.
+[NotMePipe](https://github.com/notmepipe) is the judge. Not a contender. You have been warned.
 
 #
 
