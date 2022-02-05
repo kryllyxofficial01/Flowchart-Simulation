@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int flowchart(){
+int flowchartBetter(){
     char choice = ' ';
     int x = 0;
     cout << "Welcome to the 3D Printer Finder.\n\n\n";
