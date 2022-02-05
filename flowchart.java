@@ -26,11 +26,21 @@ public class flowchart {
         System.out.println("");
         System.out.println("Recommendation: Deezmaker Bukobot v2");
       }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
+      }
     }
     else if (affordability.equals("N")) {
         System.out.println("");
         System.out.println("");
         System.out.println("Recommendation: Ultimaker2");
+    }
+    else {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("That was not an option.");
     }
 
     printQuality.close();
@@ -78,11 +88,21 @@ public class flowchart {
               System.out.println("");
               System.out.println("Recommendation: Rigidbot Regular");
             }
+            else {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("That was not an option.");
+            }
           }
           else if (build_amount.equals("L")) {
             System.out.println("");
             System.out.println("");
             System.out.println("Recommendation: Rigidbot Big");
+          }
+          else {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("That was not an option.");
           }
         }
         else if (capability.equals("F")) {
@@ -90,11 +110,21 @@ public class flowchart {
           System.out.println("");
           System.out.println("Recommendation: Velleman K8200");
         }
+        else {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("That was not an option.");
+        }
       }
       else if (kit_type.equals("P")) {
         System.out.println("");
         System.out.println("");
         System.out.println("Recommendation: Robo3D");
+      }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
       }
     }
     else if (affordability.equals("N")) {
@@ -113,6 +143,16 @@ public class flowchart {
         System.out.println("");
         System.out.println("Recommendation: Lulzbot TAZ 4");
       }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
+      }
+    }
+    else {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("That was not an option.");
     }
 
     moddability.close();
@@ -165,11 +205,21 @@ public class flowchart {
               System.out.println("");
               System.out.println("Recommendation: Solidoodle Workbench Apprentice");
             }
+            else {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("That was not an option.");
+            }
           }
           else if (extruder.equals("N")) {
             System.out.println("");
             System.out.println("");
             System.out.println("Recommendation: Solidoodle 4");
+          }
+          else {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("That was not an option.");
           }
         }
         else if (printer.equals("N")) {
@@ -199,8 +249,28 @@ public class flowchart {
               System.out.println("");
               System.out.println("Recommendation: XYZPrinting DaVinci 1.0");
             }
+            else {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("That was not an option.");
+            }
+          }
+          else {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("That was not an option.");
           }
         }
+        else {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("That was not an option.");
+        }
+      }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
       }
     }
     else if (affordability.equals("N")) {
@@ -258,6 +328,16 @@ public class flowchart {
                 System.out.println("");
                 System.out.println("Recommendation: Leapfrog Creatr HS");
               }
+              else {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("That was not an option.");
+              }
+            }
+            else {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("That was not an option.");
             }
           }
           else if (extruder.equals("N")) {
@@ -265,8 +345,28 @@ public class flowchart {
               System.out.println("");
               System.out.println("Recommendation: SeeMeCNC Orion Delta, Airwolf HDX, or Leapfrog Creatr");
           }
+          else {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("That was not an option.");
+          }
+        }
+        else {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("That was not an option.");
         }
       }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
+      }
+    }
+    else {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("That was not an option.");
     }
 
     easeOfUse.close();
@@ -307,6 +407,16 @@ public class flowchart {
           System.out.println("");
           System.out.println("Recommendation: Wanhao Duplicator 5");
         }
+        else {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("That was not an option.");
+        }
+      }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
       }
     }
     else if (affordability.equals("N")) {
@@ -325,6 +435,16 @@ public class flowchart {
         System.out.println("");
         System.out.println("Recommendation: Leapfrog Creatr XL");
       }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
+      }
+    }
+    else {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("That was not an option.");
     }
 
     bigBuildVolume.close();
@@ -370,7 +490,22 @@ public class flowchart {
           System.out.println("");
           System.out.println("Recommendation: Printrbot Simple Metal");
         }
+        else {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("That was not an option.");
+        }
       }
+      else {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("That was not an option.");
+      }
+    }
+    else {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("That was not an option.");
     }
 
     portability.close();
@@ -397,6 +532,11 @@ public class flowchart {
     }
     else if (purpose.equals("P")) {
       portabilityBranch();
+    }
+    else {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("That was not an option.");
     }
     
     scanner.close();
