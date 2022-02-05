@@ -8,11 +8,13 @@ public class flowchart {
     System.out.println("");
     System.out.println("Do you want affordability? [Y]es or [N]o?:");
     String affordability = printQuality.next();
+    affordability = affordability.toUpperCase();
 
     if (affordability.equals("Y")) {
       System.out.println("");
       System.out.println("Do you also want dual extrusion? [Y]es or [N]o?:");
       String extrusion_type = printQuality.next();
+      extrusion_type = extrusion_type.toUpperCase();
 
       if (extrusion_type.equals("Y")) {
         System.out.println("");
@@ -40,26 +42,31 @@ public class flowchart {
     System.out.println("");
     System.out.println("Do you want affordability? [Y]es or [N]o?:");
     String affordability = moddability.next();
+    affordability = affordability.toUpperCase();
 
     if (affordability.equals("Y")) {
       System.out.println("");
       System.out.println("What kit do you want? [D]IY or [P]re-assembled?:");
       String kit_type = moddability.next();
+      kit_type = kit_type.toUpperCase();
 
       if (kit_type.equals("D")) {
         System.out.println("");
         System.out.println("Do you want [M]ore Build Volume or [F]aster Printing Speed?:");
         String capability = moddability.next();
+        capability = capability.toUpperCase();
 
         if (capability.equals("M")) {
           System.out.println("");
           System.out.println("How much more? A [B]it More or a [L]ot More?:");
           String build_amount = moddability.next();
+          build_amount = build_amount.toUpperCase();
 
           if (build_amount.equals("B")) {
             System.out.println("");
             System.out.println("Would you rather have better [C]ompany Support or better C[O]mmunity Support?:");
             String support_type = moddability.next();
+            support_type = support_type.toUpperCase();
 
             if (support_type.equals("C")) {
               System.out.println("");
@@ -94,6 +101,7 @@ public class flowchart {
       System.out.println("");
       System.out.println("What kit do you want? [D]IY or [P]re-assembled?:");
       String kit_type = moddability.next();
+      kit_type = kit_type.toUpperCase();
 
       if (kit_type.equals("D")) {
         System.out.println("");
@@ -116,11 +124,13 @@ public class flowchart {
     System.out.println("");
     System.out.println("Do you want affordability? [Y]es or [N]o?:");
     String affordability = easeOfUse.next();
+    affordability = affordability.toUpperCase();
 
     if (affordability.equals("Y")) {
       System.out.println("");
       System.out.println("Do you want more [E]ase of Use or [B]uild Volume?:");
       String capability = easeOfUse.next();
+      capability = capability.toUpperCase();
 
       if (capability.equals("E")) {
         System.out.println("");
@@ -131,16 +141,19 @@ public class flowchart {
         System.out.println("");
         System.out.println("Do you want an open-source printer? [Y]es or [N]o?:");
         String printer = easeOfUse.next();
+        printer = printer.toUpperCase();
 
         if (printer.equals("Y")) {
           System.out.println("");
           System.out.println("Do you want a dual extruder? [Y]es or [N]o?:");
           String extruder = easeOfUse.next();
+          extruder = extruder.toUpperCase();
 
           if (extruder.equals("Y")) {
             System.out.println("");
             System.out.println("Do you want a big build volume? [Y]es or [N]o?:");
             String build_type = easeOfUse.next();
+            build_type = build_type.toUpperCase();
 
             if (build_type.equals("Y")) {
               System.out.println("");
@@ -163,6 +176,7 @@ public class flowchart {
           System.out.println("");
           System.out.println("Do you want a dual extruder? [Y]es or [N]o?:");
           String extruder = easeOfUse.next();
+          extruder = extruder.toUpperCase();
 
           if (extruder.equals("Y")) {
             System.out.println("");
@@ -173,6 +187,7 @@ public class flowchart {
             System.out.println("");
             System.out.println("Do you want a 3D scanner? [Y]es or [N]o?:");
             String scanner = easeOfUse.next();
+            scanner = scanner.toUpperCase();
 
             if (scanner.equals("Y")) {
               System.out.println("");
@@ -192,6 +207,7 @@ public class flowchart {
       System.out.println("");
       System.out.println("Do you want a MakerBot? [Y]es or [N]o?:");
       String makerbot = easeOfUse.next();
+      makerbot = makerbot.toUpperCase();
 
       if (makerbot.equals("Y")) {
         System.out.println("");
@@ -202,6 +218,7 @@ public class flowchart {
         System.out.println("");
         System.out.println("Do you want a MakerBot clone? [Y]es or [N]o?:");
         String clone = easeOfUse.next();
+        clone = clone.toUpperCase();
 
         if (clone.equals("Y")) {
           System.out.println("");
@@ -212,11 +229,13 @@ public class flowchart {
           System.out.println("");
           System.out.println("Do you want a dual extruder? [Y]es or [N]o?:");
           String extruder = easeOfUse.next();
+          extruder = extruder.toUpperCase();
 
           if (extruder.equals("Y")) {
             System.out.println("");
             System.out.println("Do you want a triple extruder? [Y]es or [N]o?:");
             String triple_extruder = easeOfUse.next();
+            triple_extruder = triple_extruder.toUpperCase();
 
             if (triple_extruder.equals("Y")) {
               System.out.println("");
@@ -227,6 +246,7 @@ public class flowchart {
               System.out.println("");
               System.out.println("Do you want a Big Build Volume? [Y]es or [N]o?");
               String build = easeOfUse.next();
+              build = build.toUpperCase();
 
               if (build.equals("Y")) {
                 System.out.println("");
@@ -258,11 +278,13 @@ public class flowchart {
     System.out.println("");
     System.out.println("Do you want affordability? [Y]es or [N]o?:");
     String affordability = bigBuildVolume.next();
+    affordability = affordability.toUpperCase();
 
     if (affordability.equals("Y")) {
       System.out.println("");
       System.out.println("Do you [N]ormal sized build or [E]xtra sized build?:");
       String build_size = bigBuildVolume.next();
+      build_size = build_size.toUpperCase();
 
       if (build_size.equals("N")) {
         System.out.println("");
@@ -273,6 +295,7 @@ public class flowchart {
         System.out.println("");
         System.out.println("Do you want a [D]IY kit or [P]re-assembled kit?:");
         String kit_type = bigBuildVolume.next();
+        kit_type = kit_type.toUpperCase();
 
         if (kit_type.equals("D")) {
           System.out.println("");
@@ -290,6 +313,7 @@ public class flowchart {
       System.out.println("");
       System.out.println("Do you want a MakerBot? [Y]es or [N]o?:");
       String makerbot = bigBuildVolume.next();
+      makerbot = makerbot.toUpperCase();
 
       if (makerbot.equals("Y")) {
         System.out.println("");
@@ -312,6 +336,7 @@ public class flowchart {
     System.out.println("");
     System.out.println("Do you want a MakerBot? [Y]es or [N]o?:");
     String makerbot = portability.next();
+    makerbot = makerbot.toUpperCase();
 
     if (makerbot.equals("Y")) {
       System.out.println("");
@@ -322,6 +347,7 @@ public class flowchart {
       System.out.println("");
       System.out.println("How portable do you want your 3D designer? [F]oldable and Battery Operable, or [L]ightweight and Small?:");
       String portability_type = portability.next();
+      portability_type = portability_type.toUpperCase();
 
       if (portability_type.equals("F")) {
         System.out.println("");
@@ -332,6 +358,7 @@ public class flowchart {
         System.out.println("");
         System.out.println("Would you rather [M]ore Printing capabilities or have a more [P]ortable Printer?:");
         String capability = portability.next();
+        capability = capability.toUpperCase();
 
         if (capability.equals("M")) {
           System.out.println("");
@@ -354,6 +381,7 @@ public class flowchart {
 
     System.out.println("What do you want most from your 3D Designer? [U]ltra High Print Quality, [M]oddability, [E]ase of Use, [B]ig Build Volume, or [P]ortability?:");
     String purpose = scanner.next();
+    purpose = purpose.toUpperCase();
 
     if (purpose.equals("U")) {
       printQualityBranch();
