@@ -226,7 +226,24 @@ public class flowchart {
             else if (triple_extruder.equals("N")) {
               System.out.println("");
               System.out.println("Do you want a Big Build Volume? [Y]es or [N]o?");
+              String build = easeOfUse.next();
+
+              if (build.equals("Y")) {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Recommendation: Leapfrog Creatr XL");
+              }
+              else if (build.equals("N")) {
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Recommendation: Leapfrog Creatr HS");
+              }
             }
+          }
+          else if (extruder.equals("N")) {
+            System.out.println("");
+              System.out.println("");
+              System.out.println("Recommendation: SeeMeCNC Orion Delta, Airwolf HDX, or Leapfrog Creatr");
           }
         }
       }
@@ -246,6 +263,9 @@ public class flowchart {
     }
     else if (purpose.equals("M")) {
       moddabilityBranch();
+    }
+    else if (purpose.equals("E")) {
+      easeOfUseBranch();
     }
     
     scanner.close();
