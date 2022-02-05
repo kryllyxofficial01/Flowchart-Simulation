@@ -23,7 +23,8 @@ public class flowchart {
       else { System.out.println("That was not an option.");
       }
     }
-    else if (affordability.equals("N")) {System.out.println("Recommendation: Ultimaker2");
+    else if (affordability.equals("N")) {
+      System.out.println("Recommendation: Ultimaker2");
     }
     else {System.out.println("That was not an option.");
     }
