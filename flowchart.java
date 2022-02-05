@@ -305,6 +305,49 @@ public class flowchart {
 
     bigBuildVolume.close();
   }
+
+  public static void portabilityBranch() {
+    Scanner portability = new Scanner(System.in);
+
+    System.out.println("");
+    System.out.println("Do you want a MakerBot? [Y]es or [N]o?:");
+    String makerbot = portability.next();
+
+    if (makerbot.equals("Y")) {
+      System.out.println("");
+      System.out.println("");
+      System.out.println("Recommendation: MakerBot Replicator Mini");
+    }
+    else if (makerbot.equals("N")) {
+      System.out.println("");
+      System.out.println("How portable do you want your 3D designer? [F]oldable and Battery Operable, or [L]ightweight and Small?:");
+      String portability_type = portability.next();
+
+      if (portability_type.equals("F")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Recommendation: Portabee GO");
+      }
+      else if (portability_type.equals("L")) {
+        System.out.println("");
+        System.out.println("Would you rather [M]ore Printing capabilities or have a more [P]ortable Printer?:");
+        String capability = portability.next();
+
+        if (capability.equals("M")) {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("Recommendation: Deezmaker Bukito");
+        }
+        else if (capability.equals("P")) {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("Recommendation: Printrbot Simple Metal");
+        }
+      }
+    }
+
+    portability.close();
+  }
   
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -321,8 +364,11 @@ public class flowchart {
     else if (purpose.equals("E")) {
       easeOfUseBranch();
     }
-    else if(purpose.equals("B")) {
+    else if (purpose.equals("B")) {
       bigBuildVolume();
+    }
+    else if (purpose.equals("P")) {
+      portabilityBranch();
     }
     
     scanner.close();
