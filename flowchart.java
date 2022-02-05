@@ -225,7 +225,7 @@ public class flowchart {
             }
             else if (triple_extruder.equals("N")) {
               System.out.println("");
-              System.out.println("Do you want a Big Build Volume");
+              System.out.println("Do you want a Big Build Volume? [Y]es or [N]o?");
             }
           }
         }
