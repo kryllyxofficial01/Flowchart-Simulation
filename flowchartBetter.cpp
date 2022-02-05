@@ -25,7 +25,8 @@ int main(){
         cout << "The thing I want most is...\n\n  [A] Ultra High Print Quality\n\n  [B] Moddability\n\n  [C] Ease of Use\n\n  [D] Big Build Volume\n\n  [E] Portability\n\n";  
         cin >> choice;
         choice = toupper(choice);
-        if (choice == 'A'){
+        switch (choice) {
+            case 'A':
             //Ultra High Print Quality 
             affordObj.affordability();
             cin >> choice;
@@ -43,8 +44,9 @@ int main(){
             }
             else if (choice == 'N')
                 cout << "You'll want the Ultimaker2.\n";     
-                }
-            if (choice == 'B'){
+                
+            break;
+            case 'B':
                 //Moddability
                 affordObj.affordability();
                 cin >> choice;
@@ -87,8 +89,7 @@ int main(){
                     else if (choice == 'A')
                         cout << "You'll want the Luizbot TAZ 4.\n";
                 }
-            }
-            if (choice == 'C'){
+            case 'C':
                 //Ease of Use
                 affordObj.affordability();
                 cin >> choice;
@@ -164,8 +165,7 @@ int main(){
                         }
                     }
                 }
-            }
-            if (choice == 'D'){
+            case 'D':
                 //Big Build Volume
                 affordObj.affordability();
                 cin >> choice;
@@ -196,8 +196,7 @@ int main(){
                     else if (choice == 'N')
                         cout << "You'll want the Makerbot Replicator Z18.\n";
                 }
-            }
-            if (choice == 'E'){
+            case 'E':
                 //Portability
                 choice = ' ';
                 cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
@@ -222,5 +221,5 @@ int main(){
                     } 
                 }
             }
-    } while (x != 1); 
+    } while (x != 1);
 }
