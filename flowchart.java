@@ -127,17 +127,17 @@ public class flowchart {
         System.out.println("");
         System.out.println("Recommendation: Dremel Ideabuilder");
       }
-      else if (capability.equals("")) {
+      else if (capability.equals("B")) {
         System.out.println("");
         System.out.println("Do you want an open-source printer? [Y]es or [N]o?:");
-        String printer_type = easeOfUse.next();
+        String printer = easeOfUse.next();
 
-        if (printer_type.equals("Y")) {
+        if (printer.equals("Y")) {
           System.out.println("");
-          System.out.println("Do you want dual extruder? [Y]es or [N]o?:");
-          String extruder_type = easeOfUse.next();
+          System.out.println("Do you want a dual extruder? [Y]es or [N]o?:");
+          String extruder = easeOfUse.next();
 
-          if (extruder_type.equals("Y")) {
+          if (extruder.equals("Y")) {
             System.out.println("");
             System.out.println("Do you want a big build volume? [Y]es or [N]o?:");
             String build_type = easeOfUse.next();
@@ -151,6 +151,81 @@ public class flowchart {
               System.out.println("");
               System.out.println("");
               System.out.println("Recommendation: Solidoodle Workbench Apprentice");
+            }
+          }
+          else if (extruder.equals("N")) {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Recommendation: Solidoodle 4");
+          }
+        }
+        else if (printer.equals("N")) {
+          System.out.println("");
+          System.out.println("Do you want a dual extruder? [Y]es or [N]o?:");
+          String extruder = easeOfUse.next();
+
+          if (extruder.equals("Y")) {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Recommendation: XYZPrinting DaVinci 2.0");
+          }
+          else if (extruder.equals("N")) {
+            System.out.println("");
+            System.out.println("Do you want a 3D scanner? [Y]es or [N]o?:");
+            String scanner = easeOfUse.next();
+
+            if (scanner.equals("Y")) {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("Recommendation: XYZPrinting DaVinci 1.0 AiO");
+            }
+            else if (scanner.equals("N")) {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("Recommendation: XYZPrinting DaVinci 1.0");
+            }
+          }
+        }
+      }
+    }
+    else if (affordability.equals("N")) {
+      System.out.println("");
+      System.out.println("Do you want a MakerBot? [Y]es or [N]o?:");
+      String makerbot = easeOfUse.next();
+
+      if (makerbot.equals("Y")) {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Recommendation: Makerbot Replicator 2");
+      }
+      else if (makerbot.equals("N")) {
+        System.out.println("");
+        System.out.println("Do you want a MakerBot clone? [Y]es or [N]o?:");
+        String clone = easeOfUse.next();
+
+        if (clone.equals("Y")) {
+          System.out.println("");
+          System.out.println("");
+          System.out.println("Recommendation: Flashforge Creator");
+        }
+        else if (clone.equals("N")) {
+          System.out.println("");
+          System.out.println("Do you want a dual extruder? [Y]es or [N]o?:");
+          String extruder = easeOfUse.next();
+
+          if (extruder.equals("Y")) {
+            System.out.println("");
+            System.out.println("Do you want a triple extruder? [Y]es or [N]o?:");
+            String triple_extruder = easeOfUse.next();
+
+            if (triple_extruder.equals("Y")) {
+              System.out.println("");
+              System.out.println("");
+              System.out.println("Recommendation: 3D Systems CubePro Trio");
+            }
+            else if (triple_extruder.equals("N")) {
+              System.out.println("");
+              System.out.println("Do you want a Big Build Volume? [Y]es or [N]o?");
             }
           }
         }
