@@ -6,7 +6,7 @@
 Fully simulate the flowchart (see image below) in two languages: Java and C++.
 
 #### The Deadline
-March 1st, at 9pm.
+February 28th, at 9pm.
 
 #### The Contenders
 [Selisine](https://github.com/aidenpike) (C++) and [Kryllyx](https://github.com/kryllyxofficial01) (Java).
