@@ -5,19 +5,16 @@ using namespace std;
 
 class choiceClass {        // The class
     public:              // Access specifier
-        char choice = ' ';
         void affordability() {  // Method/function defined inside the class
-            choice = ' ';
             cout << "Do you also need affordability? [Y or N] ";
     }
         void machineType() {
-            choice = ' ';
             cout << "DIY kit or assembled machine? [D or A] ";
         }
 };
 
-int main(){
-    char choice = ' ';
+int flowchart(){
+    char choice = ' '; 
     int x = 0;
     choiceClass affordObj, machineType;
     cout << "Welcome to the 3D Printer Finder.\n\n\n";
@@ -33,7 +30,6 @@ int main(){
             choice = toupper(choice);
             if (choice == 'Y'){
                 //Need affordability
-                choice = ' ';
                 cout << "Do you need dual extrusion? [Y or N] ";
                 cin >> choice;
                 choice = toupper(choice);        
@@ -44,7 +40,6 @@ int main(){
             }
             else if (choice == 'N')
                 cout << "You'll want the Ultimaker2.\n";     
-                
             break;
             case 'B':
                 //Moddability
@@ -56,16 +51,13 @@ int main(){
                     cin >> choice;
                     choice = toupper(choice);    
                     if (choice == 'D'){
-                        choice = ' ';
                         cout << "Would you rather have more build volume or faster printing speeds? [V or S] ";
                         cin >> choice;
                         choice = toupper(choice);    
                         if (choice == 'V'){
-                            choice = ' ';
                             cout << "A little bit more build volume or a LOT more build volume? [l or L (CASE SENSITIVE)]";
                             cin >> choice;
                             if (choice == 'l'){
-                                choice = ' ';
                                 cout << "Would you rather have better company support or better community support? [c or C (CASE SENSITIVE)] ";
                                 cin >> choice;
                                 if (choice == 'c')
@@ -95,24 +87,20 @@ int main(){
                 cin >> choice;
                 choice = toupper(choice);                
                 if (choice == 'Y'){
-                    choice = ' ';
                     cout << "Would you rather have more ease of use or more build volume? [E or V] ";
                     cin >> choice;
                     choice = toupper(choice);    
                     if (choice == 'E')
                         cout << "You'll want the Dremel Ideabuilder.\n";
                     else if (choice == 'V'){
-                        choice = ' ';
                         cout << "Do you want an open source printer? [Y or N] ";
                         cin >> choice;
                         choice = toupper(choice);
                         if (choice == 'Y'){
-                            choice = ' ';
                             cout << "Do you need a dual extruder? [Y or N] ";
                             cin >> choice;
                             choice = toupper(choice);
                             if (choice == 'Y'){
-                                choice = ' ';
                                 cout << "Do you need a big build volume? [Y or N] ";
                                 cin >> choice;
                                 choice = toupper(choice);    
@@ -127,31 +115,26 @@ int main(){
                     }
                 }
                 if (choice == 'N'){               
-                    choice = ' ';
                     cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
                     cin >> choice;
                     choice = toupper(choice);
                     if (choice == 'Y'){
-                        choice = ' ';
                         cout << "How about a MakerBot clone? [Y or N] ";
                         cin >> choice;
                         choice = toupper(choice);
                         if (choice == 'Y')
                             cout << "You'll want the Flashforge Creator.\n";
                         else if (choice == 'N'){
-                            choice = ' ';
                             cout << "Do you need a dual extruder? [Y or N] ";
                             cin >> choice;
                             choice = toupper(choice);
                             if (choice == 'Y')
-                                choice = ' ';
                                 cout << "How does a triple extruder sound? ";
                                 cin >> choice;
                                 choice = toupper(choice);
                                 if (choice == 'Y')
                                     cout << "You'll want the 3D systems CubePro Trio.\n";
                                 else if (choice == 'N'){
-                                    choice = ' ';
                                     cout << "So then just a dual extruder. Do you need a big build volume? [Y or N] ";
                                     cin >> choice;
                                     choice = toupper(choice);
@@ -171,7 +154,6 @@ int main(){
                 cin >> choice;
                 choice = toupper(choice);
                 if (choice == 'Y'){
-                    choice = ' ';
                     cout << "Do you want big build volume, or REALLY BIG build volume? [b or B (CASE SENSITIVE)] ";    
                     cin >> choice;
                     if (choice == 'b')
@@ -187,7 +169,6 @@ int main(){
                     }
                 }
                 else if (choice == 'N'){
-                    choice = ' ';
                     cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
                     cin >> choice;
                     choice = toupper(choice);
@@ -198,19 +179,16 @@ int main(){
                 }
             case 'E':
                 //Portability
-                choice = ' ';
                 cout << "Are you opposed to the idea of having a MakerBot? [Y or N] ";
                 cin >> choice;
                 choice = toupper(choice);    
                 if (choice == 'Y'){
-                    choice = ' ';
                     cout << "What level of portable are we talking about...Foldable and battery operable or lightweight and small? [F or S] ";
                     cin >> choice;
                     choice = toupper(choice);
                     if (choice == 'F')
                        cout << "You'll want the Poratabee GO.\n";
                     else if (choice == 'S'){
-                        choice = ' ';
                         cout << "Would you rather have the ability to print more materials or have a more portable printer? [M or P] ";
                         cin >> choice;
                         choice = toupper(choice);
@@ -221,5 +199,6 @@ int main(){
                     } 
                 }
             }
+        choice = ' ';
     } while (x != 1);
 }
