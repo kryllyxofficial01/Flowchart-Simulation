@@ -20,13 +20,15 @@ public class flowchart {
       else if (extrusion_type.equals("N")) {
         System.out.println("Recommendation: Deezmaker Bukobot v2");
       }
-      else { System.out.println("That was not an option.");
+      else {
+        System.out.println("That was not an option.");
       }
     }
     else if (affordability.equals("N")) {
       System.out.println("Recommendation: Ultimaker2");
     }
-    else {System.out.println("That was not an option.");
+    else {
+      System.out.println("That was not an option.");
     }
 
     printQuality.close();
