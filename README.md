@@ -1,7 +1,5 @@
 # Flow Chart Simulation
 
-#
-
 #### The Goal
 Fully simulate the flowchart (see image below) in two languages: Java and C++.
 
