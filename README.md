@@ -1,16 +1,10 @@
 # Flow Chart Simulation
 
 #### The Goal
-Fully simulate the flowchart (see image below) in two languages: Java and C++.
-
-#### The Deadline
-February 28th, at 9pm.
+Fully simulate the flowchart (see image below) in as many languages as possible.
 
 #### The Contenders
-[Selisine](https://github.com/aidenpike) (C++) and [Kryllyx](https://github.com/kryllyxofficial01) (Java).
-
-#### The Judge
-[MePipe](https://github.com/NotMePipe) is the judge. Not a contender. You have been warned.
+Anyone who wants to contribute. If there is a language that hasn't been used, it's free game.
 
 #
 
